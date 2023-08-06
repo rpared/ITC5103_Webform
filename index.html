@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <script src="js/form.js" defer></script>
+    <title>Validated Contact Form</title>
+</head>
+<body>
+    <header>
+        <h1>Roger's Contact Form</h1>
+        <p>This is a contact form that will be validated through Javascript</p>
+    </header>
+    <main>
+        <h2>Contact me</h2>
+        <p>Fill the fields and I will do my best to reply as soon as possible.</p>
+        <!-- Im using formsubmit.com (free) in the action method to get the message -->
+        <form id="rogerform" name="rogerform" action="https://formsubmit.co/rparedes@costra.com" method="POST">
+            <legend>CONTACT INFO</legend>
+            <div class="formcontainer">
+                <label for="firstname">*Type your first name: </label>
+                <input type="firstname" id="firstname" name="firstname" placeholder="Name" autofocus required>
+                <label for="lastname">Type your last name: </label>
+                <input type="lastname" id="lastname" name="lastname" placeholder="Optional">
+                <label for="email">*Type your email: </label>
+                <input type="email" id="email" placeholder="abc@domain.com" autocomplete="email" required> <br>
+                
+            </div>
+            
+            <legend>YOUR MESSAGE</legend>
+            <div class="formcontainer">
+                <label for="message">*Enter your message: </label>
+                <textarea name="message" id="message" cols="5" rows="5" placeholder="Some nice words or insults ha ha." required></textarea>
+                <!-- These are hidden tags for the reception -->
+                <input type="hidden" name="_subject" value="New message from ITS Web Assignment 4 Contact Form">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_autoresponse" value="Thak you for your message, I value it. I'll try to respond, but do not hate me if I do not. ">
+                <input type="hidden" name="_blacklist" value="free, porn, naked, bitcoin, newsletter">
+                <input type="hidden" name="_next" value="thanks.html">
+            </div>
+            <div id="btn">
+            <input id="submit-btn" type="submit" value="Submit" onclick="validateForm()">
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>

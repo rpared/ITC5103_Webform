@@ -1,0 +1,116 @@
+body{
+    background-color: gray;
+    font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+    color: #434343;
+}
+
+header{
+    background-color: #434343;
+    width: 100%;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 15px 50px;
+    box-shadow: 0 0 5px #000;
+    position: sticky;
+    top: 0;
+}
+
+header h1{
+    margin-bottom: 0;
+}
+
+header p{
+    margin: 2px 0 0 0;
+    color: #b1b061;
+}
+
+main{
+    background-color: rgb(245, 245, 245);
+    width: 70%;
+    max-width: 800px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 25px;
+    box-shadow: 0 0 5px #000;
+}
+
+main h2{
+    margin-bottom: 0;
+}
+
+main p{
+    margin: 4px 0 16px;
+}
+
+/* FORM */
+.formcontainer{
+    display: grid;
+    grid-template-columns: 160px auto;
+    gap: 5px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+legend{
+    font-size: 0.8em;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #93913a;
+    color: none;
+    color: #93913a;
+    margin-bottom: 8px;
+}
+
+label {
+    text-align: right;
+
+}
+
+input {
+    width: 70%;
+    border: 1px solid #93913a;
+}
+
+::placeholder, ::-webkit-input-placeholder{
+    font-size: 0.9em;
+    color:#7a792d;
+}
+::-webkit-validation-bubble{
+    color: #000;
+    background-color: #93913a;
+}
+
+
+
+textarea{
+    width: 70%;
+    border: 1px solid #93913a;
+}
+
+/* BUTTON */
+#btn{
+    display: flex;
+}
+
+
+#submit-btn{
+    color: #ebebeb;
+    border: 1px solid #fff;
+    background-color: #93913a;
+    box-shadow: 0 0 3px #6f6f6f;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 4px 8px;
+    width: fit-content;
+    margin: 0 auto;
+    
+}
+#submit-btn:hover{
+    background-color: #93913a;
+    box-shadow: 0 2px 5px #6f6f6f;
+    color: #fff;
+    
+}
+
