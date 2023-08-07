@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css" type="text/css">
     <link rel="stylesheet" href="styles/style.css" type="text/css">
     <script src="js/form.js" defer></script>
@@ -14,7 +14,7 @@
 <body>
     <header>
         <h1>Roger's Contact Form</h1>
-        <p>This is a contact form that will be validated through Javascript</p>
+        <p>This contact form is validated through Javascript</p>
     </header>
     <main>
         <h2>Contact me</h2>
@@ -23,11 +23,11 @@
         <form id="rogerform" name="rogerform" action="https://formsubmit.co/d8f9ea64894c49744c4889ae6a3ce6cb" method="POST"> 
                 <legend>CONTACT INFO</legend>
             <div class="formcontainer">
-                <label for="firstname">*Type your first name: </label>
+                <label for="firstname">*Enter your first name: </label>
                 <input type="firstname" id="firstname" name="firstname" placeholder="Name" autofocus required>
-                <label for="lastname">Type your last name: </label>
+                <label for="lastname">Enter your last name: </label>
                 <input type="lastname" id="lastname" name="lastname" placeholder="Optional">
-                <label for="email">*Type your email: </label>
+                <label for="email">*Enter your email: </label>
                 <input type="email" id="email" placeholder="abc@domain.com" autocomplete="email" required> <br>
                 
             </div>
@@ -39,12 +39,11 @@
                 <!-- These are hidden tags for the reception -->
                 <input type="hidden" name="_subject" value="New message from ITS Web Assignment 4 Contact Form">
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_autoresponse" value="Thak you for your message, I value it. I'll try to respond, but do not hate me if I do not. ">
                 <input type="hidden" name="_blacklist" value="free, porn, naked, bitcoin, newsletter">
                 <input type="hidden" name="_next" value="https://rpared.github.io/ITC5103_Webform/thanks.html">
             </div>
                 <div id="btn">
-                <input id="submit-btn" type="submit" value="Submit">
+                <input id="submit-btn" type="submit" value="Submit" onclick="validateForm()">
             </div>
         </form>
     </main>
