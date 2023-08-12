@@ -1,5 +1,5 @@
 body{
-    background-color: gray;
+    background-color: #bab98f;
     font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
     color: #434343;
 }
@@ -8,12 +8,12 @@ header{
     background-color: #434343;
     width: 100%;
     color: #fff;
-    width: 100%;
     margin: 0;
     padding: 15px 50px;
     box-shadow: 0 0 5px #000;
     position: sticky;
     top: 0;
+    border-bottom: 2px solid #b1b061;
 }
 
 header h1{
@@ -29,9 +29,10 @@ main{
     background-color: rgb(245, 245, 245);
     width: 70%;
     max-width: 800px;
-    height: 100vh;
+    height: 80vh;
     margin: 0 auto;
     padding: 25px;
+
     box-shadow: 0 0 5px #000;
 }
 
@@ -41,6 +42,12 @@ main h2{
 
 main p{
     margin: 4px 0 16px;
+}
+
+.copyr{
+    font-size: 0.8EM;
+    text-align: center;
+    margin: 15PX auto;
 }
 
 /* FORM */
@@ -64,7 +71,6 @@ legend{
 
 label {
     text-align: right;
-
 }
 
 input {
@@ -77,11 +83,22 @@ textarea{
     border: 1px solid #93913a;
 }
 
+h2, h3{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    font-size: 3em;
+    margin-top: 20px;
+}
+
+
 /* BUTTON */
 #btn{
     display: flex;
 }
-
 
 #submit-btn{
     color: #ebebeb;
@@ -98,10 +115,29 @@ textarea{
 #submit-btn:hover{
     background-color: #93913a;
     box-shadow: 0 2px 5px #6f6f6f;
-    color: #fff;
-    
+    color: #fff; 
 }
 
+
+/* BACKGROUND */
+#background{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #bab98f;
+    z-index: -1;
+}
+
+#rectangle{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color:#b1b061;
+    top: 0px;
+}
+
+
+/* RESPONSIVENESS */
 @media only screen and (max-width: 700px) {
     main{
         width: 80%;
