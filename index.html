@@ -22,31 +22,33 @@
         <p>Fill the fields and I will do my best to reply as soon as possible.</p>
         <!-- Im using formsubmit.com (free) in the action method to get the message, the d8f9ea64894c49744c4889ae6a3ce6cb string hides my email -->
         <form id="rogerform" name="rogerform" action="https://formsubmit.co/d8f9ea64894c49744c4889ae6a3ce6cb" method="POST"> 
+            <fieldset>   
                 <legend>CONTACT INFO</legend>
-            <div class="formcontainer">
-                <label for="firstname">*Enter your first name: </label>
-                <input type="firstname" id="firstname" name="firstname" placeholder="Name" autofocus required>
-                <label for="lastname">Enter your last name: </label>
-                <input type="lastname" id="lastname" name="lastname" placeholder="Optional">
-                <label for="email">*Enter your email: </label>
-                <input type="email" id="email" placeholder="abc@domain.com" autocomplete="email" required> <br>
-                
-            </div>
-            
-            <legend>YOUR MESSAGE</legend>
-            <div class="formcontainer">
-                <label for="message">*Enter your message: </label>
-                <textarea name="message" id="message" cols="5" rows="5" placeholder="Some nice words or insults ha ha." required></textarea>
-                <atta
-                <!-- These are hidden tags for the reception -->
-                <input type="hidden" name="_subject" value="New message from ITS Web Assignment 4 Contact Form">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_blacklist" value="free, porn, naked, bitcoin, newsletter">
-                <input type="hidden" name="_next" value="https://rpared.github.io/ITC5103_Webform/thanks.html">
-            </div>
-                <div id="btn">
-                <input id="submit-btn" type="submit" value="Submit" onclick="validateForm()">
-            </div>
+                <div class="formcontainer">
+                    <label for="firstname">*Enter your first name: </label>
+                    <input id="firstname" name="firstname" placeholder="Name" autofocus required>
+                    <label for="lastname">Enter your last name: </label>
+                    <input id="lastname" name="lastname" placeholder="Optional">
+                    <label for="email">*Enter your email: </label>
+                    <input type="email" id="email" placeholder="abc@domain.com" autocomplete="email" required> <br>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>YOUR MESSAGE</legend>
+                <div class="formcontainer">
+                    <label for="message">*Enter your message: </label>
+                    <textarea name="message" id="message" cols="5" rows="5" placeholder="Some nice words or insults ha ha." required></textarea>
+                    <!-- These are hidden tags for the reception: -->
+                    <input type="hidden" name="_subject" value="New message from ITS Web Assignment 4 Contact Form">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_blacklist" value="free, porn, naked, bitcoin, newsletter">
+                    <input type="hidden" name="_next" value="https://rpared.github.io/ITC5103_Webform/thanks.html">
+                </div>
+                    <div id="btn">
+                    <input id="submit-btn" type="submit" value="Submit" onclick="validateForm()">
+                </div>
+            </fieldset>
         </form>
     </main>
     <div class="copyr">© Roger Paredes 2023</div>
