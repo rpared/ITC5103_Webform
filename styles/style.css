@@ -1,6 +1,6 @@
 body{
-    background-color: #bab98f;
-    font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+    background-color: #bfbea1;
+    font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
     color: #434343;
 }
 
@@ -9,7 +9,7 @@ header{
     width: 100%;
     color: #fff;
     margin: 0;
-    padding: 15px 50px;
+    padding: 15px 5%;
     box-shadow: 0 0 5px #000;
     position: sticky;
     top: 0;
@@ -17,6 +17,8 @@ header{
 }
 
 header h1{
+    font-weight: 800;
+    margin: 0;
     margin-bottom: 0;
 }
 
@@ -38,6 +40,7 @@ main{
 
 main h2{
     margin-bottom: 0;
+    font-weight: 600;
 }
 
 main p{
@@ -76,11 +79,13 @@ label {
 input {
     width: 70%;
     border: 1px solid #93913a;
+    border-radius: 4px;
 }
 
 textarea{
     width: 70%;
     border: 1px solid #93913a;
+    border-radius: 4px;
 }
 
 h2, h3{
@@ -94,6 +99,9 @@ h2{
     margin-top: 20px;
 }
 
+::placeholder {
+    color:#868432;
+  }
 
 /* BUTTON */
 #btn{
@@ -139,6 +147,13 @@ h2{
 
 /* RESPONSIVENESS */
 @media only screen and (max-width: 700px) {
+    header{
+        padding: 15px 0;
+    }
+    header h1, header p{
+        text-align: center;
+    }
+
     main{
         width: 80%;
         padding: 15px;
